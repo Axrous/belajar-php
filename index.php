@@ -12,7 +12,7 @@
     </div>
     
 <h3>Menu Makanan & Minuman </h3>
-<a href="add-item.php">Tambah menu</a>
+<a href="views/add-item.php">Tambah menu</a>
 <table border="1" class="table">
     <tr>
         <th>No</th>
@@ -21,7 +21,7 @@
     </tr>
     <h4>MAKANAN</h4>
     <?php
-    include 'config.php';
+    include 'controller/config.php';
     $mysqli_query = mysqli_query($conn, "SELECT * FROM barang WHERE jenis = 'makanan' ");
     $no= 1;
     while($data = mysqli_fetch_array($mysqli_query)){
