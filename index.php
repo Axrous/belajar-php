@@ -18,6 +18,7 @@
         <th>No</th>
         <th>Nama</th>
         <th>Harga</th>
+        <th>Option</th>
     </tr>
     <h4>MAKANAN</h4>
     <?php
@@ -31,6 +32,7 @@
         <td><?php echo $no++; ?></td>
         <td><?php echo $data['nama']; ?></td>
         <td><?php echo $data['harga'] ?></td>
+        <td><a href="views/update-item.php?id=<?php echo $data['id'] ?>">Update</a> | <a href="controller/delete-item.php?id=<?php echo $data['id'] ?>">Hapus</a></td>
     </tr>
 
 <?php } ?>
